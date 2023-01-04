@@ -21,6 +21,6 @@
 
 ### Fix Discord desktop app voice/screensharing
 
-1. Copy the environment.plist file into $HOME/Library/LaunchAgents/
+1. Copy the environment.plist file into `$HOME/Library/LaunchAgents/`
 
 2. Reboot macOS

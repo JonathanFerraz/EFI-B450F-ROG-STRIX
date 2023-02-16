@@ -2,7 +2,7 @@
 
 **macOS Ventura**: 13.2 (22D49) Dual Boot w/ **Windows 11**: 22H2
 
-**OpenCore version**: 0.8.8 <br>
+**OpenCore version**: 0.8.9 <br>
 
 ## My System
 

@@ -30,6 +30,14 @@
 				<key>Path</key>
 				<string>SSDT-HPET.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-RHUB-Reset.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-RHUB-Reset.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -1199,7 +1207,7 @@
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Scheme</key>
 		<dict>
@@ -1518,7 +1526,7 @@
 			<key>MinimumAudibleGain</key>
 			<integer>-55</integer>
 			<key>PlayChime</key>
-			<string>Enable</string>
+			<string>Enabled</string>
 			<key>ResetTrafficClass</key>
 			<false/>
 			<key>SetupDelay</key>
@@ -1730,6 +1738,8 @@
 			<true/>
 			<key>ResizeGpuBars</key>
 			<integer>-1</integer>
+			<key>ResizeUsePciRbIo</key>
+			<false/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>

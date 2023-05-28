@@ -1,8 +1,8 @@
 <img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
 
-**macOS Ventura**: 13.3.1 (22E261) Dual Boot w/ **Windows 11**: 22H2
+**macOS Ventura**: 13.3.1 (a) (22E772610a) Dual Boot w/ **Windows 11**: 22H2
 
-**OpenCore version**: 0.9.1 <br>
+**OpenCore version**: 0.9.2 <br>
 
 ## My System
 
@@ -24,3 +24,11 @@
 1. Copy the environment.plist file into `$HOME/Library/LaunchAgents/`
 
 2. Reboot macOS
+
+### Fix wrong windows time
+
+1. Extract correcao-horario-windows-dualboot.zip
+
+2. Execute WinUTCOn.reg
+
+3. Reboot Windows

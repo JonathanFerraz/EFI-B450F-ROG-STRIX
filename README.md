@@ -12,6 +12,7 @@
 | Motherboard   | ASUS ROG Strix B450-F Gaming |
 | GPU           | AMD Radeon RX 5700 XT        |
 | RAM           | 16GB @ 3266 MHz              |
+| WIFI + BT     | BCM4360                      |
 
 ### Recommended software
 

@@ -14,7 +14,7 @@
 | RAM           | 24GB @ 3266 MHz                 |
 | Storage       | NVMe SSD Lexar NM620, 240gb     |
 | Ethernet      | I211 Gigabit Network Connection |
-| Wifi + Bt     | Fenvi BCM94360                  |
+| WIFI + BT     | Fenvi BCM94360                  |
 
 ### Recommended software
 

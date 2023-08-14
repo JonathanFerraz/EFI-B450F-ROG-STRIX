@@ -1,18 +1,20 @@
 <img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
 
-**macOS Ventura**: 13.5 (22G74) Dual Boot w/ **Windows 11**: 23H2
+**macOS Ventura**: 13.5 (22G74) Dual Boot w/ **Windows 11**: 22H2
 
 **OpenCore version**: 0.9.4 <br>
 
 ## My System
 
-| **Component** | **Model**                    |
-| ------------- | ---------------------------- |
-| CPU           | AMD Ryzen 5 3600 @ 3.6GHz    |
-| Motherboard   | ASUS ROG Strix B450-F Gaming |
-| GPU           | AMD Radeon RX 5700 XT        |
-| RAM           | 16GB @ 3266 MHz              |
-| WIFI + BT     | BCM4360                      |
+| **Component** | **Model**                       |
+| ------------- | ------------------------------- |
+| Motherboard   | ASUS ROG Strix B450-F Gaming    |
+| CPU           | AMD Ryzen 5 3600 @ 3.6GHz       |
+| GPU           | AMD Radeon RX 5700 XT           |
+| RAM           | 24GB @ 3266 MHz                 |
+| Storage       | NVMe SSD Lexar NM620, 240gb     |
+| Ethernet      | I211 Gigabit Network Connection |
+| Wifi + Bt     | Fenvi BCM94360                  |
 
 ### Recommended software
 
@@ -28,7 +30,7 @@
 
 ### Fix wrong windows time
 
-1. Extract correcao-horario-windows-dualboot.zip
+1. Extract correction-windows-time- dualboot.zip
 
 2. Execute WinUTCOn.reg
 
@@ -38,7 +40,7 @@
 
 To fix Adobe copy and paste this into a terminal enter password if it asks
 
-If it still keeps crashing read this [Guide](https://gist.github.com/XLNCs/86d7a391e46f85a04d28db171656b458)
+If it still keeps crashing read this [Guide](https://gist.github.com/naveenkrdy/26760ac5135deed6d0bb8902f6ceb6bd)
 
 ```
 for file in MMXCore FastCore TextModel libiomp5.dylib libtbb.dylib libtbbmalloc.dylib; do

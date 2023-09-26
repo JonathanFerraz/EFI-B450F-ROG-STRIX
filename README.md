@@ -1,8 +1,8 @@
 <img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
 
-**macOS Ventura**: 13.5 (22G74) Dual Boot w/ **Windows 11**: 22H2
+**macOS Ventura**: 13.6 (22G120) Dual Boot w/ **Windows 11**: 22H2
 
-**OpenCore version**: 0.9.4 <br>
+**OpenCore version**: 0.9.5 <br>
 
 ## My System
 

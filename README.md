@@ -1,6 +1,6 @@
 <img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
 
-**macOS Ventura**: 13.6 (22G120) Dual Boot w/ **Windows 11**: 22H2
+**macOS Ventura**: 14.0 (23A344) Dual Boot w/ **Windows 11**: 23H2
 
 **OpenCore version**: 0.9.5 <br>
 
@@ -30,7 +30,7 @@
 
 ### Fix wrong windows time
 
-1. Extract correction-windows-time- dualboot.zip
+1. Extract correction-windows-time-dualboot.zip
 
 2. Execute WinUTCOn.reg
 

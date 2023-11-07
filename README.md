@@ -1,8 +1,8 @@
 <img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
 
-**macOS Sonoma**: 14.0 (23A344) Dual Boot w/ **Windows 11**: 23H2
+**macOS Sonoma**: 14.1 (23B74) Dual Boot w/ **Windows 11**: 23H2
 
-**OpenCore version**: 0.9.5 <br>
+**OpenCore version**: 0.9.6 <br>
 
 ## My System
 

@@ -2,7 +2,7 @@
 
 **macOS Sonoma**: 14.1.1 (23B81) Dual Boot w/ **Windows 11**: 23H2
 
-**OpenCore version**: 0.9.6 <br>
+**OpenCore version**: 0.9.7 <br>
 
 ## My System
 

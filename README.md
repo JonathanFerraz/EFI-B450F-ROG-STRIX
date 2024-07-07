@@ -1,8 +1,8 @@
 <img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
 
-**macOS Sonoma**: 14.3 (23D56) Dual Boot w/ **Windows 11**: 23H2
+**macOS Sonoma**: 14.5 (23F79) Dual Boot w/ **Windows 11**: 24H2
 
-**OpenCore version**: 0.9.8 <br>
+**OpenCore version**: 1.0.0 <br>
 
 ## My System
 
@@ -22,11 +22,13 @@
 
 2. Monitor Control: https://github.com/MonitorControl/MonitorControl/releases - For adjusting the brightness of an external monitor
 
-### Fix Discord desktop app voice/screensharing
+### Discord patch to fix Voice/Video crashing when join for AMD hackintosh system
 
-1. Copy the environment.plist file into `$HOME/Library/LaunchAgents/`
+1. npm install -g amdfriend
 
-2. Reboot macOS
+2. sudo amdfriend --in-place --sign ~/Library/Application\ Support/discord/0.0.309/modules/discord_krisp/discord_krisp.node
+
+Make sure to check discord version under ~/Library/Application Support/discord to replace (0.0.309).
 
 ### Fix wrong windows time
 

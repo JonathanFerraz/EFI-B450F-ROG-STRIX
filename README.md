@@ -1,8 +1,8 @@
 <img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
 
-**macOS Sonoma**: 14.5 (23F79) Dual Boot w/ **Windows 11**: 24H2
+**macOS Sonoma**: 14.6 (23G80) Dual Boot w/ **Windows 11**: 24H2
 
-**OpenCore version**: 1.0.0 <br>
+**OpenCore version**: 1.0.1 <br>
 
 ## My System
 
@@ -18,22 +18,30 @@
 
 ### Recommended software
 
-1. AMD Power Gadget: https://github.com/trulyspinach/SMCAMDProcessor/releases - To read and adjust CPU clock frequencies
-
-2. Monitor Control: https://github.com/MonitorControl/MonitorControl/releases - For adjusting the brightness of an external monitor
+1. Monitor Control: https://github.com/MonitorControl/MonitorControl/releases - For adjusting the brightness of an external monitor
 
 ### Discord patch to fix Voice/Video crashing when join for AMD hackintosh system
 
-1. npm install -g amdfriend
+2. npm install -g amdfriend
 
-2. sudo amdfriend --in-place --sign ~/Library/Application\ Support/discord/0.0.309/modules/discord_krisp/discord_krisp.node
+3. sudo amdfriend --in-place --sign ~/Library/Application\ Support/discord/0.0.309/modules/discord_krisp/discord_krisp.node
 
 Make sure to check discord version under ~/Library/Application Support/discord to replace (0.0.309).
 
+Or execute this script [Discord patch](/Resources/discord_patch.sh)
+
 ### Fix wrong windows time
 
-1. Extract correction-windows-time-dualboot.zip
+4. Extract correction-windows-time-dualboot.zip
 
-2. Execute WinUTCOn.reg
+5. Execute WinUTCOn.reg
 
-3. Reboot Windows
+6. Reboot Windows
+
+### Post-Installation
+
+7. Copy your EFI directory onto your main drive EFI partition, you'll be able to boot the system without your bootable USB.
+
+8. Apply [Ryzen patch script](/Resources/ryzen_patch.sh) - it solves MKL (Math Kernel Library) issues and sets correct sleep parameters.
+
+There's also `intel_fast_memset` instruction which, obviously, doesn't exist on AMD systems. It's very common in Adobe software - you can simply fix it by running [this script](/Resources/adobe_patch.sh). Older versions of Adobe software (e. g. up to 22.3.1 for Photoshop) need it's [legacy version](/Resources/adobe_patch_legacy.sh).

@@ -5,24 +5,24 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
-	<string>v1.1</string>
+	<string>v1.0</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.dhinakg.USBToolBox.map</string>
+	<string>com.corpnewt.USBMap</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>UTBMap</string>
+	<string>USBMap</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.1</string>
+	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>PTXH</key>
+		<key>MacPro7,1-PTXH</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
@@ -37,15 +37,53 @@
 				</dict>
 			</dict>
 			<key>IOProviderClass</key>
-			<string>AppleUSBHostController</string>
+			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
+				<key>kUSBMuxEnabled</key>
+				<true/>
 				<key>port-count</key>
 				<data>
 				DgAAAA==
 				</data>
 				<key>ports</key>
 				<dict>
+					<key>SS01</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>
+						AQAAAA==
+						</data>
+					</dict>
+					<key>SS02</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>
+						AgAAAA==
+						</data>
+					</dict>
+					<key>SS03</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>#port</key>
+						<data>
+						AwAAAA==
+						</data>
+					</dict>
+					<key>SS04</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>#port</key>
+						<data>
+						BAAAAA==
+						</data>
+					</dict>
 					<key>HS01</key>
 					<dict>
 						<key>UsbConnector</key>
@@ -76,10 +114,10 @@
 					<key>HS04</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>0</integer>
-						<key>port</key>
+						<integer>3</integer>
+						<key>#port</key>
 						<data>
-						CQAAAA==
+						CAAAAA==
 						</data>
 					</dict>
 					<key>HS05</key>
@@ -88,7 +126,7 @@
 						<integer>0</integer>
 						<key>port</key>
 						<data>
-						CgAAAA==
+						CQAAAA==
 						</data>
 					</dict>
 					<key>HS06</key>
@@ -97,10 +135,28 @@
 						<integer>0</integer>
 						<key>port</key>
 						<data>
-						CwAAAA==
+						CgAAAA==
 						</data>
 					</dict>
 					<key>HS07</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>
+						CwAAAA==
+						</data>
+					</dict>
+					<key>HS08</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>#port</key>
+						<data>
+						DAAAAA==
+						</data>
+					</dict>
+					<key>HS09</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
@@ -109,7 +165,7 @@
 						DQAAAA==
 						</data>
 					</dict>
-					<key>HS08</key>
+					<key>HS10</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
@@ -118,30 +174,12 @@
 						DgAAAA==
 						</data>
 					</dict>
-					<key>SS01</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>port</key>
-						<data>
-						AQAAAA==
-						</data>
-					</dict>
-					<key>SS02</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>3</integer>
-						<key>port</key>
-						<data>
-						AgAAAA==
-						</data>
-					</dict>
 				</dict>
 			</dict>
 			<key>model</key>
 			<string>MacPro7,1</string>
 		</dict>
-		<key>XHC0</key>
+		<key>MacPro7,1-XHC0</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
@@ -156,9 +194,11 @@
 				</dict>
 			</dict>
 			<key>IOProviderClass</key>
-			<string>AppleUSBHostController</string>
+			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
+				<key>kUSBMuxEnabled</key>
+				<true/>
 				<key>port-count</key>
 				<data>
 				BwAAAA==
@@ -195,7 +235,7 @@
 					<key>HS04</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>8</integer>
+						<integer>9</integer>
 						<key>port</key>
 						<data>
 						BAAAAA==
@@ -226,6 +266,15 @@
 						<key>port</key>
 						<data>
 						BwAAAA==
+						</data>
+					</dict>
+					<key>SS04</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>#port</key>
+						<data>
+						CAAAAA==
 						</data>
 					</dict>
 				</dict>

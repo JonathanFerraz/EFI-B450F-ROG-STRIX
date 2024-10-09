@@ -1,8 +1,8 @@
 <img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
 
-**macOS Sonoma**: 14.6 (23G80) Dual Boot w/ **Windows 11**: 24H2
+**macOS Sequoia**: 15.0.1 (24A348) Dual Boot w/ **Windows 10**: 22H2
 
-**OpenCore version**: 1.0.1 <br>
+**OpenCore version**: 1.0.2 <br>
 
 ## My System
 
@@ -11,7 +11,7 @@
 | Motherboard   | ASUS ROG Strix B450-F Gaming    |
 | CPU           | AMD Ryzen 5 3600 @ 3.6GHz       |
 | GPU           | AMD Radeon RX 5700 XT           |
-| RAM           | 24GB @ 3266 MHz                 |
+| RAM           | 32GB @ 3000 MHz                 |
 | Storage       | NVMe SSD Lexar NM620, 240gb     |
 | Ethernet      | I211 Gigabit Network Connection |
 | WIFI + BT     | Fenvi BCM94360                  |
@@ -22,9 +22,9 @@
 
 ### Discord patch to fix Voice/Video crashing when join for AMD hackintosh system
 
-2. npm install -g amdfriend
+2. npm install -g friendlyamd
 
-3. sudo amdfriend --in-place --sign ~/Library/Application\ Support/discord/0.0.309/modules/discord_krisp/discord_krisp.node
+3. sudo friendlyamd --in-place --sign ~/Library/Application\ Support/discord/0.0.309/modules/discord_krisp/discord_krisp.node
 
 Make sure to check discord version under ~/Library/Application Support/discord to replace (0.0.309).
 

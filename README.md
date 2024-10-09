@@ -45,3 +45,7 @@ Or execute this script [Discord patch](/Resources/discord_patch.sh)
 8. Apply [Ryzen patch script](/Resources/ryzen_patch.sh) - it solves MKL (Math Kernel Library) issues and sets correct sleep parameters.
 
 There's also `intel_fast_memset` instruction which, obviously, doesn't exist on AMD systems. It's very common in Adobe software - you can simply fix it by running [this script](/Resources/adobe_patch.sh). Older versions of Adobe software (e. g. up to 22.3.1 for Photoshop) need it's [legacy version](/Resources/adobe_patch_legacy.sh).
+
+## Credits
+
+amdfriendly is based on [AMDFriend](https://github.com/NyaomiDEV/AMDFriend)

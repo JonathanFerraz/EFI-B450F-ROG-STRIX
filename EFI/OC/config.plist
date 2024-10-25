@@ -16,14 +16,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-GPRW.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-GPRW.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-HPET.aml</string>
 				<key>Enabled</key>
 				<true/>
@@ -32,11 +24,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-SBUS-MCHC.aml</string>
+				<string>SSDT-PLUG.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-SBUS-MCHC.aml</string>
+				<string>SSDT-PLUG.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -51,36 +43,6 @@
 		<array/>
 		<key>Patch</key>
 		<array>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>BaseSkip</key>
-				<integer>0</integer>
-				<key>Comment</key>
-				<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>R1BSVwI=</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>WFBSVwI=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
 			<dict>
 				<key>Base</key>
 				<string></string>
@@ -273,7 +235,7 @@
 			<key>EnableWriteUnprotector</key>
 			<false/>
 			<key>FixupAppleEfiImages</key>
-			<false/>
+			<true/>
 			<key>ForceBooterSignature</key>
 			<false/>
 			<key>ForceExitBootServices</key>
@@ -911,42 +873,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AppleALC</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>BlueToolFixup.kext</string>
-				<key>Comment</key>
-				<string>BlueToolFixup.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BlueToolFixup</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>FeatureUnlock.kext</string>
-				<key>Comment</key>
-				<string>FeatureUnlock.kext</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/FeatureUnlock</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1791,11 +1717,11 @@
 			<key>CustomPciSerialDevice</key>
 			<false/>
 			<key>CustomSMBIOSGuid</key>
-			<false/>
+			<true/>
 			<key>DisableIoMapper</key>
-			<true/>
+			<false/>
 			<key>DisableIoMapperMapping</key>
-			<true/>
+			<false/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
@@ -1834,7 +1760,7 @@
 			<key>FuzzyMatch</key>
 			<true/>
 			<key>KernelArch</key>
-			<string>x86_64</string>
+			<string>Auto</string>
 			<key>KernelCache</key>
 			<string>Auto</string>
 		</dict>
@@ -1866,7 +1792,7 @@
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Acidanthera\GoldenGate</string>
+			<string>Auto</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -1874,7 +1800,7 @@
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>15</integer>
+			<integer>10</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -1893,7 +1819,7 @@
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>3</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Entries</key>
 		<array/>
@@ -1912,7 +1838,7 @@
 			<key>EnablePassword</key>
 			<false/>
 			<key>ExposeSensitiveData</key>
-			<integer>15</integer>
+			<integer>6</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>PasswordHash</key>
@@ -1950,7 +1876,7 @@
 				<key>revcpu</key>
 				<integer>1</integer>
 				<key>revcpuname</key>
-				<string>AMD Ryzen 5 3600</string>
+				<string>AMD Ryzen 5 3600 6-Core Processor</string>
 				<key>rtc-blacklist</key>
 				<data></data>
 				<key>revpatch</key>
@@ -1963,11 +1889,11 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 debug=0x100 agdpmod=pikera</string>
+				<string>agdpmod=pikera</string>
 				<key>csr-active-config</key>
 				<data>AwgAAA==</data>
 				<key>prev-lang:kbd</key>
-				<string>en-US:0</string>
+				<string>en:252</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 			</dict>
@@ -1990,7 +1916,6 @@
 			<array>
 				<string>boot-args</string>
 				<string>ForceDisplayRotationInEFI</string>
-				<string>prev-lang:kbd</string>
 				<string>csr-active-config</string>
 			</array>
 		</dict>
@@ -2014,6 +1939,8 @@
 				<string>fmm-mobileme-token-FMM-BridgeHasAccount</string>
 				<string>nvda_drv</string>
 				<string>prev-lang:kbd</string>
+				<string>backlight-level</string>
+				<string>BootCampHD</string>
 			</array>
 			<key>8BE4DF61-93CA-11D2-AA0D-00E098032B8C</key>
 			<array>
@@ -2038,23 +1965,23 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>F5K337207CDK3F71H</string>
+			<string>C029401304NJG36JA</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>1537</integer>
 			<key>ROM</key>
-			<data>2KJe/TGU</data>
+			<data>6wYaeBmh</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>MacPro7,1</string>
+			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>F5KLDEZSP7QM</string>
+			<string>C02ZH1ZBHX87</string>
 			<key>SystemUUID</key>
-			<string>FFF24DA9-76C8-4976-B030-8EFF84CA8120</string>
+			<string>A5B75A6A-B5AE-44FB-A64E-C454F7B87EC8</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -2063,7 +1990,7 @@
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Create</string>
+		<string>Custom</string>
 		<key>UseRawUuidEncoding</key>
 		<false/>
 	</dict>
@@ -2080,9 +2007,9 @@
 			<key>JumpstartHotPlug</key>
 			<false/>
 			<key>MinDate</key>
-			<integer>0</integer>
+			<integer>-1</integer>
 			<key>MinVersion</key>
-			<integer>0</integer>
+			<integer>-1</integer>
 		</dict>
 		<key>AppleInput</key>
 		<dict>
@@ -2118,11 +2045,11 @@
 			<key>AudioCodec</key>
 			<integer>0</integer>
 			<key>AudioDevice</key>
-			<string>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x4)</string>
+			<string>PciRoot(0x0)/Pci(0x1b,0x0)</string>
 			<key>AudioOutMask</key>
-			<integer>-1</integer>
+			<integer>1</integer>
 			<key>AudioSupport</key>
-			<true/>
+			<false/>
 			<key>DisconnectHda</key>
 			<false/>
 			<key>MaximumGain</key>
@@ -2189,6 +2116,18 @@
 				<false/>
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>OpenHfsPlus.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>LoadEarly</key>
+				<false/>
+				<key>Path</key>
+				<string>OpenHfsPlus.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -2275,8 +2214,6 @@
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
-			<key>#JoinInsertglyt</key>
-			<false/>
 			<key>AppleAudio</key>
 			<false/>
 			<key>AppleBootPolicy</key>
@@ -2335,7 +2272,7 @@
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
-			<false/>
+			<true/>
 			<key>ReloadOptionRoms</key>
 			<false/>
 			<key>RequestBootVarRouting</key>

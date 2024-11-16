@@ -85,13 +85,22 @@
 					<key>HS05</key>
 					<dict>
 						<key>UsbConnector</key>
+						<integer>0</integer>
+						<key>port</key>
+						<data>
+						CgAAAA==
+						</data>
+					</dict>
+					<key>HS06</key>
+					<dict>
+						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
 						<data>
 						CwAAAA==
 						</data>
 					</dict>
-					<key>HS06</key>
+					<key>HS07</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
@@ -100,7 +109,7 @@
 						DAAAAA==
 						</data>
 					</dict>
-					<key>HS07</key>
+					<key>HS08</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
@@ -130,7 +139,7 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>iMacPro1,1</string>
+			<string>MacPro7,1</string>
 		</dict>
 		<key>XHC0</key>
 		<dict>
@@ -186,7 +195,7 @@
 					<key>HS04</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>0</integer>
+						<integer>8</integer>
 						<key>port</key>
 						<data>
 						BAAAAA==
@@ -222,7 +231,7 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>iMacPro1,1</string>
+			<string>MacPro7,1</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>

@@ -1,6 +1,6 @@
 <img src="https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Logos/OpenCore_with_text_Small.png" width="200" height="48"/>
 
-**macOS Sequoia**: 15.0.1 (24A348) Dual Boot w/ **Windows 10**: 22H2
+**macOS Sequoia**: 15.2 (24C101) Dual Boot w/ **Windows 11**: 22H2
 
 **OpenCore version**: 1.0.2 <br>
 
